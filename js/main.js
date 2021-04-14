@@ -28,6 +28,7 @@ function validateCheck() {
   } else if (validateEmail(email)) {
     $result.hide();
     $("#uno").hide();
+    $("#dos").show();
   } else {
     $result.show();
     $result.text("email is not valid :(");
@@ -101,6 +102,16 @@ function validate() {
 
 let validationLength = 10;
 
+$(".otp").on("keyup keydown change", function () {
+  validationLength = 4;
+  if ($(this).val().length > validationLength) {
+    val = $(this)
+      .val()
+      .substr(0, $(this).val().length - 1);
+    $(this).val(val);
+  }
+});
+
 $(".mobile").on("keyup keydown change", function () {
   if ($(this).val().length > validationLength) {
     val = $(this)
@@ -139,10 +150,16 @@ function sendCode() {
     }, 0);
 })();
 
+function verifyOtp() {
+  $("#dos").hide();
+  $(".countdown").css("display", "flex");
+  $(".thanks").css("display", "flex");
+}
+
 $("#check").on("click", validateCheck);
 
 $("#submit").on("click", validate);
 
 $("#sendVerification").on("click", sendCode);
 
-$(document).ready(function () {});
+$("#verify").on("click", verifyOtp);

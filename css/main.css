@@ -13,13 +13,18 @@ body {
 
 .registration-container {
   padding-top: 450px;
-  display: none;
 }
 
 .input {
   max-width: 423px;
   width: 100%;
   min-height: 68px;
+}
+
+#uno {
+  position: absolute;
+  right: 340px;
+  bottom: 221px;
 }
 
 label {
@@ -36,7 +41,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
 }
 
 form {
@@ -64,7 +68,7 @@ form {
           justify-content: space-between;
 }
 
-#uno {
+#dos {
   display: none;
 }
 
@@ -176,7 +180,7 @@ li span {
   padding: 0 .25rem;
 }
 
-.coundown {
+.countdown {
   position: relative;
   top: 500px;
   display: -webkit-box;
@@ -192,6 +196,7 @@ li span {
   left: 370px;
   color: #EA1C2F;
   font-family: 'Helvetica Neue', sans-serif;
+  display: none;
 }
 
 .thanks {
@@ -215,5 +220,6 @@ li span {
   position: absolute;
   top: 100px;
   right: 50px;
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
