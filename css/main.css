@@ -1,0 +1,219 @@
+@import url("http://fonts.cdnfonts.com/css/gotham-black");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+body {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-container {
+  min-height: 1070px;
+  font-family: "gotham-black";
+}
+
+.registration-container {
+  padding-top: 450px;
+  display: none;
+}
+
+.input {
+  max-width: 423px;
+  width: 100%;
+  min-height: 68px;
+}
+
+label {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+button {
+  background-color: #5D5F62 !important;
+  color: #fff !important;
+}
+
+.check-mail-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.error-text {
+  color: red;
+  font-size: 18px;
+  display: none;
+}
+
+.registration-content-container {
+  height: 515px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#uno {
+  display: none;
+}
+
+#dos form {
+  max-width: 900px;
+}
+
+.form-check-input {
+  position: relative;
+}
+
+.form-check-label {
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.form-check {
+  margin-bottom: 20px;
+}
+
+.bg-check {
+  background: url(../images/check.png) no-repeat 25px 25px;
+  background-position-x: 95%;
+}
+
+#addCalendar {
+  background: url(../images/callendar.png) no-repeat 25px 25px;
+  background-position-x: 5%;
+  background-position-y: center;
+  margin-bottom: 40px;
+}
+
+#Test {
+  background-color: #fff !important;
+  color: #707070 !important;
+  border: 1px solid #707070;
+}
+
+.send-verification {
+  max-width: 240px;
+  width: 100%;
+  min-height: 45px;
+  margin: 10px 0;
+}
+
+.verify-otp {
+  display: none;
+}
+
+.otp {
+  max-width: 168px;
+  width: 100%;
+  min-height: 43px;
+}
+
+.otp-cont {
+  min-height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.otp-cont button {
+  max-width: 103px;
+  width: 100%;
+  min-height: 43px;
+  margin-left: 10px;
+}
+
+/* general styling */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.message {
+  font-size: 4rem;
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 .25rem;
+}
+
+.coundown {
+  position: relative;
+  top: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 370px;
+  color: #EA1C2F;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.thanks {
+  max-width: 355px;
+  width: 100%;
+  min-height: 110px;
+  background-color: #EA1C2F;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+/*# sourceMappingURL=main.css.map */
