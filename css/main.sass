@@ -9,6 +9,7 @@ body
 .main-container
     min-height: 1070px
     font-family: "gotham-black"
+    margin-bottom: 20px
 
 .registration-container
     padding-top: 450px
@@ -163,3 +164,14 @@ li span
     top: 100px
     right: 50px
     display: none
+
+@media screen and (max-width: 880px)
+    #uno
+        position: static
+
+    .forms
+        flex-direction: column
+        align-items: center
+
+    .forms div
+        max-width: 450px
